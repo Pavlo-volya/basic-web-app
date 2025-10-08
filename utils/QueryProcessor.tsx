@@ -45,7 +45,7 @@ export default function QueryProcessor(query: string): string {
     return "pdeynega";
   }
 
-  if (query.toLowerCase().includes("class")) {
+  if (query.toLowerCase().includes("I love you")) {
     return "17313";
   }
 
