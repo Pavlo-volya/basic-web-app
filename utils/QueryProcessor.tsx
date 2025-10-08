@@ -34,7 +34,7 @@ export default function QueryProcessor(query: string): string {
   }
 
   if (query.toLowerCase().includes("name")) {
-    return "Pasha D";
+    return "Rohan";
   }
 
   if (query.toLowerCase().includes("I love you")) {
@@ -42,7 +42,7 @@ export default function QueryProcessor(query: string): string {
   }
 
   if (query.toLowerCase().includes("andrew id")) {
-    return "Pasha D";
+    return "pdeynega";
   }
 
   if (query.toLowerCase().includes("class")) {
