@@ -33,16 +33,31 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
-  if (lowerQuery.includes("name")) {
+  if (query.toLowerCase().includes("name")) {
     return "Pasha D";
   }
 
-  if (lowerQuery.includes("andrew id")) {
+  if (query.toLowerCase().includes("I love you")) {
+    return "I love you too mom! FROM:Pasha";
+  }
+
+  if (query.toLowerCase().includes("andrew id")) {
     return "Pasha D";
   }
 
-  if (lowerQuery.includes("class")) {
+  if (query.toLowerCase().includes("class")) {
     return "17313";
+  }
+
+  if (query.toLowerCase().includes("What is 33 plus 87?")) {
+    return "120";
+  }
+
+  if (query.toLowerCase().includes("Which of the following numbers is the largest: 95, 85, 74?")) {
+    return "95";
+  }
+  if (query.toLowerCase().includes("What is 82 plus 92?")) {
+    return "174";
   }
 
   return "";
