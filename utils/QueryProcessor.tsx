@@ -1,6 +1,10 @@
 export default function QueryProcessor(query: string): string {
+  if (query.toLowerCase().includes("I love you")) {
+    return "I love you too mom! FROM:Pasha";
+  }
   const lowerQuery = query.toLowerCase();
 
+  
   const additionMatch = query.match(/what is (\d+)\s+plus\s+(\d+)\??/i);
   if (additionMatch) {
     const first = parseInt(additionMatch[1], 10);
@@ -35,10 +39,6 @@ export default function QueryProcessor(query: string): string {
 
   if (query.toLowerCase().includes("name")) {
     return "Rohan";
-  }
-
-  if (query.toLowerCase().includes("I love you")) {
-    return "I love you too mom! FROM:Pasha";
   }
 
   if (query.toLowerCase().includes("andrew id")) {
